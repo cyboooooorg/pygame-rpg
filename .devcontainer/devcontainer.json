@@ -1,0 +1,56 @@
+{
+	"name": "Python Development Container",
+	"build": {
+		"dockerfile": "./Dockerfile",
+		"context": "."
+	},
+	"workspaceFolder": "/workspaces/pygame-rpg/resources",
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:2": {
+			"installZsh": "true",
+			"username": "vscode",
+			"userUid": "1000",
+			"userGid": "1000",
+			"upgradePackages": "true"
+		},
+		"ghcr.io/devcontainers/features/python:1": "latest",
+		"ghcr.io/devcontainers/features/git:1": {
+			"version": "latest",
+			"ppa": "false"
+		}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"github.copilot",
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"ms-python.black-formatter",
+				"charliermarsh.ruff",
+				"nickdemayo.vscode-json-editor",
+				"mikestead.dotenv",
+				"mtxr.sqltools",
+				"aaron-bond.better-comments",
+				"waderyan.gitblame",
+				"mhutchie.git-graph",
+				"donjayamanne.githistory",
+				"codezombiech.gitignore",
+				"shd101wyy.markdown-preview-enhanced",
+				"davidanson.vscode-markdownlint",
+				"ms-azuretools.vscode-docker",
+				"tommorris.mako",
+				"mgesbert.python-path",
+				"task.vscode-task",
+				"postman.postman-for-vscode",
+				"vivaxy.vscode-conventional-commits",
+				"mtxr.sqltools-driver-mysql"
+			]
+		}
+	},
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "rustc --version",
+	// Set `remoteUser` to `root` to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	"remoteUser": "vscode"
+}

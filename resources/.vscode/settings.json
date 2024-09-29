@@ -1,0 +1,15 @@
+{
+    // * Editor Settings
+    "keyboard.dispatch": "keyCode",
+    "python.pythonPath": "/workspaces/pygame-platformer/resources/pygame-platformer/.venv/bin/python3",
+    "python.defaultInterpreterPath": "/workspaces/pygame-platformer/resources/pygame-platformer/.venv/bin/python3",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+    },
+    "python.analysis.extraPaths": [
+        "/workspaces/pygame-platformer/resources/pygame-platformer/.venv/lib/python3.12/site-packages/"
+    ],
+    "python.analysis.typeCheckingMode": "off",
+    "python.analysis.autoImportCompletions": false,
+}
